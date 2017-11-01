@@ -10,13 +10,20 @@
     "dev": "nodemon --exec 'npm start'",
     "test": "jest && standard"
   },
+  "now": {
+    "type": "npm",
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
   "dependencies": {
     "probot": "^3.0.0"
   },
   "devDependencies": {
+    "await-url": "^0.3.0",
     "jest": "^21.2.1",
     "localtunnel": "^1.8.2",
-    "nodemon": "^1.12.1",        
+    "nodemon": "^1.12.1",
     "standard": "^10.0.3"
   },
   "engines": {
