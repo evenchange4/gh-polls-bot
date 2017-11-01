@@ -1,0 +1,31 @@
+{
+  "name": "gh-polls-bot",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Michael Hsu (徐承志) <evenchange4@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/evenchange4/gh-polls-bot.git",
+  "scripts": {
+    "start": "probot run ./index.js",
+    "dev": "nodemon --exec 'npm start'",
+    "test": "jest && standard"
+  },
+  "dependencies": {
+    "probot": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1",
+    "localtunnel": "^1.8.2",
+    "nodemon": "^1.12.1",        
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">= 7.7.0",
+    "npm": ">= 4.0.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
