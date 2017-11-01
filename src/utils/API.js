@@ -1,16 +1,12 @@
 const request = require('request-promise');
+const { BASE_URL } = require('./config');
 
-/**
- * ref: https://github.com/srph/gh-polls-web/blob/master/src/config.js
- */
-const BASE_URL = 'https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod';
-
-const createPoll = async optnios => {
+const addPoll = async options => {
   const res = await request({
     method: 'POST',
     uri: `${BASE_URL}/poll`,
     body: {
-      optnios,
+      options,
     },
     json: true,
   });
@@ -18,5 +14,5 @@ const createPoll = async optnios => {
 };
 
 module.exports = {
-  createPoll,
+  addPoll,
 };
