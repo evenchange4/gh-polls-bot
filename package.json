@@ -1,31 +1,90 @@
 {
   "name": "gh-polls-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Automatically create polls in GitHub issues.",
   "author": "Michael Hsu (徐承志) <evenchange4@gmail.com>",
   "license": "ISC",
   "repository": "https://github.com/evenchange4/gh-polls-bot.git",
   "scripts": {
-    "start": "probot run ./index.js",
+    "start": "probot run ./src/index.js --port 3000",
+    "now-start": "PRIVATE_KEY=$(echo $PRIVATE_KEY_BASE64 | base64 -d) npm start",
     "dev": "nodemon --exec 'npm start'",
-    "test": "jest && standard"
+    "test": "NODE_ENV='test' TZ='UTC' jest --coverage --runInBand --forceExit",
+    "test:watch": "npm run test -- --watch",
+    "eslint": "eslint ./",
+    "format": "prettier --write 'src/**/*.js'"
+  },
+  "now": {
+    "type": "npm",
+    "env": {
+      "NODE_ENV": "production"
+    }
   },
   "dependencies": {
-    "probot": "^3.0.0"
+    "argv-split": "^2.0.1",
+    "probot": "^3.0.1",
+    "ramda": "^0.25.0",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
   },
   "devDependencies": {
+    "await-url": "^0.3.0",
+    "babel-eslint": "^8.0.1",
+    "codecov": "^3.0.0",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-prettier": "^2.7.0",
+    "eslint-config-react-app": "^2.0.1",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.2.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.4.0",
     "jest": "^21.2.1",
-    "localtunnel": "^1.8.2",
-    "nodemon": "^1.12.1",        
-    "standard": "^10.0.3"
+    "localtunnel": "^1.8.3",
+    "nodemon": "^1.12.1",
+    "now": "^8.3.11",
+    "prettier": "^1.7.4"
   },
   "engines": {
-    "node": ">= 7.7.0",
-    "npm": ">= 4.0.0"
+    "node": ">=9.0.0"
   },
-  "standard": {
-    "env": [
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "react-app",
+      "airbnb",
+      "prettier",
+      "prettier/flowtype",
+      "prettier/react",
+      "plugin:jest/recommended"
+    ],
+    "plugins": [
+      "prettier",
       "jest"
-    ]
+    ],
+    "env": {
+      "jest/globals": true
+    },
+    "rules": {
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js"
+          ]
+        }
+      ],
+      "import/no-extraneous-dependencies": 0,
+      "jsx-a11y/no-static-element-interactions": 0,
+      "react/forbid-prop-types": 0,
+      "react/require-default-props": 0,
+      "prettier/prettier": "error"
+    }
   }
 }
