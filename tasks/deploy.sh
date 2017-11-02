@@ -11,7 +11,7 @@ ALIAS='gh-polls-bot.now.sh'
 export PATH="./node_modules/.bin:$PATH"
 
 # 1. Wair for deployment ready
-URL=$(now -e APP_ID="$APP_ID" WEBHOOK_SECRET="$WEBHOOK_SECRET" PRIVATE_KEY_BASE64="$PRIVATE_KEY_BASE64" --public --token "$NOW_TOKEN" --team $TEAM)
+URL=$(now -e APP_ID="$APP_ID" -e WEBHOOK_SECRET="$WEBHOOK_SECRET" -e PRIVATE_KEY_BASE64="$PRIVATE_KEY_BASE64" --public --token "$NOW_TOKEN" --team $TEAM)
 await-url "$URL"
 now ls --token "$NOW_TOKEN" --team $TEAM
 
