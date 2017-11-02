@@ -12,7 +12,7 @@ export PATH="./node_modules/.bin:$PATH"
 
 # 1. Wair for deployment ready
 URL=$(now -e APP_ID="$APP_ID" -e WEBHOOK_SECRET="$WEBHOOK_SECRET" -e PRIVATE_KEY_BASE64="$PRIVATE_KEY_BASE64" --public --token "$NOW_TOKEN" --team $TEAM)
-await-url "$URL"
+await-url "$URL/probot"
 now ls --token "$NOW_TOKEN" --team $TEAM
 
 # 2. Alias
