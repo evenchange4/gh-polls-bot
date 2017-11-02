@@ -35,4 +35,3 @@ it('should handle addPollListener', async () => {
 [![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/ID/3)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/ID/3/vote)`,
   });
 });
-
