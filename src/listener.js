@@ -1,10 +1,11 @@
+// @flow
 const split = require('argv-split');
 const getCommand = require('./utils/getCommand');
 const { addPoll } = require('./utils/API');
 const toMarkdown = require('./utils/toMarkdown');
 const { LABEL } = require('./utils/config');
 
-const addPollListener = async context => {
+const addPollListener = async (context /* : any */) => {
   const { body, labels } = context.payload.issue;
   const [command, argument] = getCommand(body);
   const options = split(argument);

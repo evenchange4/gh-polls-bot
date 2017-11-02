@@ -1530,6 +1530,10 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
+flow-bin@^0.58.0:
+  version "0.58.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.58.0.tgz#62d5a776589419e5656800a0e5230a5e585ca65e"
+
 follow-redirects@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-0.0.7.tgz#34b90bab2a911aa347571da90f22bd36ecd8a919"
@@ -3350,9 +3354,9 @@ private@^0.1.7:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
 
-probot@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/probot/-/probot-3.0.1.tgz#ab5bb1882cbae3b1ccadfe7d94a7a4b3d12eb383"
+probot@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/probot/-/probot-3.0.2.tgz#449b8d70c8d1c4b6f3cc3b60e466c5e4fbdc03a1"
   dependencies:
     bottleneck "^1.16.0"
     bunyan "^1.8.12"

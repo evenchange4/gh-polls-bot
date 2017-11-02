@@ -38,6 +38,11 @@ https://github.com/apps/polls
 
 ## Developer Guide
 
+### Environments
+
+- Create a `.env` file from `.env.example`.
+- Download the `private-key.pem` from GitHub and move it to your project’s directory.
+
 ### Requirements
 
 -   node >= 9.0.0
@@ -57,6 +62,7 @@ $ yarn start   # prod server
 $ yarn run format
 $ yarn run eslint
 $ yarn run test:watch
+$ yarn run flow
 ```
 
 ### Deploy to Now.sh
@@ -75,6 +81,14 @@ Any git commits push to master branch.
 
 - https://github.com/probot/commands
 - https://github.com/srph/gh-polls-web
+
+## Misc
+
+- Redirect to github.com for private repos. [\[apex/gh-polls#3\]](https://github.com/apex/gh-polls/issues/3#issuecomment-312964372)
+- PEM format doesn't play nicely with now.sh secrets/env vars. [\[probot/friction#17\]](https://github.com/probot/friction/issues/17)
+- Links related to GH polls:
+  - [Web App](https://app.gh-polls.com/) – GH polls web app
+  - [apex/gh-polls](https://github.com/apex/gh-polls) – Polls for user feedback in GitHub issues [gh-polls.com](https://gh-polls.com/)
 
 ## CONTRIBUTING
 
