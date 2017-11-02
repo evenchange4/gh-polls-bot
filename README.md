@@ -1,5 +1,7 @@
 # gh-polls-bot
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/evenchange4/gh-polls-bot.svg)](https://greenkeeper.io/)
+
 > a GitHub App built with [probot](https://github.com/probot/probot) that 
 
 ## Setup
