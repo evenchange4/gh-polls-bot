@@ -1,16 +1,15 @@
-# gh-polls-bot
-
 <p align="center" >
   <a href="https://github.com/apps/polls">
-    <img height="56" src="./docs/logo.png">
+    <img height="65" src="./docs/logo.png">
   </a>
 </p>
+
+# GitHub Polls Bot
 
 > A GitHub App built with [Probot](https://github.com/probot/probot) that automatically creates [gh-polls](https://github.com/apex/gh-polls) in GitHub issues.
 
 [![Travis][travis-badge]][travis]
 [![Codecov Status][codecov-badge]][codecov]
-
 [![Dependency Status][dependency-badge]][dependency]
 [![devDependency Status][devDependency-badge]][devDependency]
 [![peerDependency Status][peerDependency-badge]][peerDependency]
@@ -33,12 +32,9 @@ https://github.com/apps/polls
 [![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXY635WEJEYKJV0BZ9WFPJVS/Option%203)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXY635WEJEYKJV0BZ9WFPJVS/Option%203/vote)
 ```
 
-![](./docs/screenshot.png)
-
-## Demo
-
-![](./docs/demo.gif)
-
+| **Screenshot** | **Demo** |
+| -------------- | -------- |
+| ![](./docs/screenshot.png) | ![](./docs/demo.gif) |
 
 ## Developer Guide
 
@@ -67,7 +63,7 @@ $ yarn run test:watch
 
 Any git commits push to master branch.
 
-> PRIVATE_KEY problem [first-timers-bot #89](https://github.com/hoodiehq/first-timers-bot/pull/89)
+> PRIVATE_KEY pem workaround: [first-timers-bot #89](https://github.com/hoodiehq/first-timers-bot/pull/89)
 
 ### Technology Stacks
 
