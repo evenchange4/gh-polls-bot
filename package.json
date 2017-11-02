@@ -6,11 +6,13 @@
   "license": "ISC",
   "repository": "https://github.com/evenchange4/gh-polls-bot.git",
   "scripts": {
-    "start": "probot run ./index.js --port 3000",
+    "start": "probot run ./src/index.js --port 3000",
+    "now-start": "PRIVATE_KEY=$(echo $PRIVATE_KEY_BASE64 | base64 -d) npm start",
     "dev": "nodemon --exec 'npm start'",
-    "test": "jest",
+    "test": "NODE_ENV='test' TZ='UTC' jest --coverage --runInBand --forceExit",
+    "test:watch": "npm run test -- --watch",
     "eslint": "eslint ./",
-    "format": "prettier --write 'src/**/*.js' 'index.js'"
+    "format": "prettier --write 'src/**/*.js'"
   },
   "now": {
     "type": "npm",
