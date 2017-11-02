@@ -1,5 +1,5 @@
 #!/bin/bash
-set -exu
+set -ex
 
 # ENV Variables, Note: NOW_TOKEN, WEBHOOK_SECRET, PRIVATE_KEY_BASE64 in travisCI
 APP_ID=6386
