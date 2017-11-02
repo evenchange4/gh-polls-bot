@@ -1,3 +1,4 @@
+// @flow
 const API = require('../API');
 
 jest.mock('request-promise', () => () => ({ id: 'MOCK_ID' }));

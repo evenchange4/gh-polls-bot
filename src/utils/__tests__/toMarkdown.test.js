@@ -1,3 +1,4 @@
+// @flow
 const toMarkdown = require('../toMarkdown');
 
 it('should return markdown', () => {

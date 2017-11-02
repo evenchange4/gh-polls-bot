@@ -12,7 +12,8 @@
     "test": "NODE_ENV='test' TZ='UTC' jest --coverage --runInBand --forceExit",
     "test:watch": "npm run test -- --watch",
     "eslint": "eslint ./",
-    "format": "prettier --write 'src/**/*.js'"
+    "format": "prettier --write 'src/**/*.js'",
+    "flow": "flow"
   },
   "now": {
     "type": "npm",
@@ -22,7 +23,7 @@
   },
   "dependencies": {
     "argv-split": "^2.0.1",
-    "probot": "^3.0.1",
+    "probot": "^3.0.2",
     "ramda": "^0.25.0",
     "request": "^2.83.0",
     "request-promise": "^4.2.2"
@@ -41,6 +42,7 @@
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
+    "flow-bin": "^0.58.0",
     "jest": "^21.2.1",
     "localtunnel": "^1.8.3",
     "nodemon": "^1.12.1",

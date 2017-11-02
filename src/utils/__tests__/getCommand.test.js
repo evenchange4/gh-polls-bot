@@ -1,3 +1,4 @@
+// @flow
 const getCommand = require('../getCommand');
 
 it('should return command with body content', () => {

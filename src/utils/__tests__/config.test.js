@@ -1,3 +1,4 @@
+// @flow
 const config = require('../config');
 
 it('should return config', () => {
