@@ -1,6 +1,7 @@
 ## Change Log
 
-### upcoming (2017/11/03 02:07 +00:00)
+### upcoming (2017/11/03 02:21 +00:00)
+- [#7](https://github.com/evenchange4/gh-polls-bot/pull/7) feat(changelog): add github-changelog to automatically create markdown. (#7) (@evenchange4)
 - [#6](https://github.com/evenchange4/gh-polls-bot/pull/6) fix(listener): return if there is no arguments (#6) (@evenchange4)
 - [#4](https://github.com/evenchange4/gh-polls-bot/pull/4) docs: typo in Readme (#4) (@mohnish)
 - [#3](https://github.com/evenchange4/gh-polls-bot/pull/3) test: add flowtype (#3) (@evenchange4)
