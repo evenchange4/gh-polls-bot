@@ -13,7 +13,8 @@
     "test:watch": "npm run test -- --watch",
     "eslint": "eslint ./",
     "format": "prettier --write 'src/**/*.js'",
-    "flow": "flow"
+    "flow": "flow",
+    "changelog": "github-changes -o evenchange4 -r gh-polls-bot -b master -f ./CHANGELOG.md --order-semver --use-commit-body"
   },
   "now": {
     "type": "npm",
@@ -43,6 +44,7 @@
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
     "flow-bin": "^0.58.0",
+    "github-changes": "^1.1.0",
     "jest": "^21.2.1",
     "localtunnel": "^1.8.3",
     "nodemon": "^1.12.1",

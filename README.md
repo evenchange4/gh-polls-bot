@@ -70,6 +70,11 @@ $ yarn run flow
 
 Any git commits push to master branch.
 
+```cmd
+$ npm version patch
+$ yarn run changelog
+```
+
 > Note: PRIVATE_KEY pem workaround: [first-timers-bot #89](https://github.com/hoodiehq/first-timers-bot/pull/89)
 
 ### Technology Stacks
