@@ -60,12 +60,14 @@
     "testEnvironment": "node",
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
-      "!src/**/*.test.{js,jsx}"
+      "!src/**/*.test.{js,jsx}",
+      "!src/**/*.flow.js"
     ],
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/",
       "<rootDir>/coverage/",
-      "<rootDir>/flow-typed/"
+      "<rootDir>/flow-typed/",
+      "<rootDir>/flow-coverage/"
     ]
   },
   "flow-coverage-report": {
