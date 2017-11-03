@@ -1,6 +1,6 @@
 {
   "name": "gh-polls-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automatically create polls in GitHub issues.",
   "author": "Michael Hsu (徐承志) <evenchange4@gmail.com>",
   "license": "ISC",
