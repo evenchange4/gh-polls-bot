@@ -7,6 +7,13 @@ Array [
 ]
 `;
 
+exports[`should return command without argument 1`] = `
+Array [
+  "/polls",
+  undefined,
+]
+`;
+
 exports[`should return only one command 1`] = `
 Array [
   "/polls 4 5 6",

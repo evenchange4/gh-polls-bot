@@ -32,3 +32,12 @@ it('should return the first matched command', () => {
   `;
   expect(getCommand(body)).toMatchSnapshot();
 });
+
+it('should return command without argument', () => {
+  const body = `
+# H1
+## H2
+/polls
+  `;
+  expect(getCommand(body)).toMatchSnapshot();
+});
