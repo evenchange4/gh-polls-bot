@@ -1,3 +1,4 @@
+// @flow
 const { addPollListener } = require('../listener');
 
 jest.mock('../utils/API', () => ({
