@@ -8,6 +8,9 @@ const { LABEL } = require('./utils/config');
 const addPollListener = async (context /* : any */) => {
   const { body, labels } = context.payload.issue;
   const [command, argument] = getCommand(body);
+
+  if (!argument) return;
+
   const options = split(argument);
 
   try {

@@ -17,24 +17,23 @@
 [![prettier][prettier-badge]][prettier]
 [![license][license-badge]][license]
 
-## Installation
-
-https://github.com/apps/polls
-
 ## Usage
+
+1. Configure the GitHub App: [github.com/apps/polls](https://github.com/apps/polls)
+2. Add command to issue:
 
 ```md
 /polls Option1 'Option 2' "Option 3"
 
 # Automatically replace with the following markdown =>
-[![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXY635WEJEYKJV0BZ9WFPJVS/Option1)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXY635WEJEYKJV0BZ9WFPJVS/Option1/vote)
-[![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXY635WEJEYKJV0BZ9WFPJVS/Opntio%202)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXY635WEJEYKJV0BZ9WFPJVS/Opntio%202/vote)
-[![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXY635WEJEYKJV0BZ9WFPJVS/Option%203)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXY635WEJEYKJV0BZ9WFPJVS/Option%203/vote)
+[![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXZMATAZ5BXF8RVRAMRSSANA/Option1)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXZMATAZ5BXF8RVRAMRSSANA/Option1/vote)
+[![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXZMATAZ5BXF8RVRAMRSSANA/Option%202)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXZMATAZ5BXF8RVRAMRSSANA/Option%202/vote)
+[![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXZMATAZ5BXF8RVRAMRSSANA/Option%203)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXZMATAZ5BXF8RVRAMRSSANA/Option%203/vote)
 ```
 
-| **Screenshot** | **Demo** |
+| **Screenshot** | [![](./docs/screenshot.png)](https://github.com/evenchange4/gh-polls-bot/issues/2)  |
 | -------------- | -------- |
-| ![](./docs/screenshot.png) | ![](./docs/demo.gif) |
+| **Demo** | ![](./docs/demo.gif) |
 
 ## Developer Guide
 
@@ -42,6 +41,8 @@ https://github.com/apps/polls
 
 - Create a `.env` file from `.env.example`.
 - Download the `private-key.pem` from GitHub and move it to your project’s directory.
+
+> Note: Please follow the [Developing an App](https://probot.github.io/docs/development/) section of Probot documents.
 
 ### Requirements
 
@@ -69,7 +70,7 @@ $ yarn run flow
 
 Any git commits push to master branch.
 
-> PRIVATE_KEY pem workaround: [first-timers-bot #89](https://github.com/hoodiehq/first-timers-bot/pull/89)
+> Note: PRIVATE_KEY pem workaround: [first-timers-bot #89](https://github.com/hoodiehq/first-timers-bot/pull/89)
 
 ### Technology Stacks
 
