@@ -4,7 +4,7 @@ node_js:
   - 9.0.0
 env:
   global:
-    - YARN_VERSION=1.2.1
+    - YARN_VERSION=1.3.2
 
 before_install:
   - export PATH="$HOME/.yarn/bin:$PATH"
