@@ -1,9 +1,15 @@
 // @flow
-const request = require('request-promise');
+const request /* : Object => Promise<Object> */ = require('request-promise');
 const { BASE_URL } = require('./config');
 
+/* ::
+type GhPollsResponse = {
+  id: string,
+};
+*/
+
 async function addPoll(options /* : string[] */) /* : Promise<string> */ {
-  const res = await request({
+  const res /* : GhPollsResponse */ = await request({
     method: 'POST',
     uri: `${BASE_URL}/poll`,
     body: {

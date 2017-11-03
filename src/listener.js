@@ -1,13 +1,13 @@
 // @flow
-const split = require('argv-split');
+const split /* : string => string[] */ = require('argv-split');
 const getCommand = require('./utils/getCommand');
 const { addPoll } = require('./utils/API');
 const toMarkdown = require('./utils/toMarkdown');
 const { LABEL } = require('./utils/config');
 
-const addPollListener = async (context /* : any */) => {
+const addPollListener /* : Listener */ = async context => {
   const { body, labels } = context.payload.issue;
-  const [command, argument] = getCommand(body);
+  const [command, argument] /* : [string, string|void] */ = getCommand(body);
 
   if (!argument) return;
 

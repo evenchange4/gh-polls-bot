@@ -64,6 +64,7 @@ $ yarn run format
 $ yarn run eslint
 $ yarn run test:watch
 $ yarn run flow
+$ yarn run flow-coverage
 ```
 
 ### Deploy to Now.sh

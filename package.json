@@ -14,6 +14,7 @@
     "eslint": "eslint ./",
     "format": "prettier --write 'src/**/*.js'",
     "flow": "flow",
+    "flow-coverage": "flow-coverage-report",
     "changelog": "github-changes -o evenchange4 -r gh-polls-bot -b master -f ./CHANGELOG.md --order-semver --use-commit-body"
   },
   "now": {
@@ -44,6 +45,7 @@
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
     "flow-bin": "^0.58.0",
+    "flow-coverage-report": "^0.4.0",
     "github-changes": "^1.1.0",
     "jest": "^21.2.1",
     "localtunnel": "^1.8.3",
@@ -65,6 +67,17 @@
       "<rootDir>/coverage/",
       "<rootDir>/flow-typed/"
     ]
+  },
+  "flow-coverage-report": {
+    "excludeGlob": [
+      "node_modules/**",
+      "src/**/*.flow.js"
+    ],
+    "includeGlob": [
+      "src/**/*.js"
+    ],
+    "threshold": 90,
+    "type": "text"
   },
   "prettier": {
     "trailingComma": "all",
