@@ -1,6 +1,8 @@
 ## Change Log
 
-### upcoming (2017/11/03 02:21 +00:00)
+### v1.0.1 (2017/11/03 02:22 +00:00)
+- [566efa3](https://github.com/evenchange4/gh-polls-bot/commit/566efa30d2955207795e3519ce3697bb783cdca9) 1.0.1 (@evenchange4)
+- [b445a8f](https://github.com/evenchange4/gh-polls-bot/commit/b445a8fcc663216fc621c00faf403d5f50d79101) docs(CHANGELOG): release (@evenchange4)
 - [#7](https://github.com/evenchange4/gh-polls-bot/pull/7) feat(changelog): add github-changelog to automatically create markdown. (#7) (@evenchange4)
 - [#6](https://github.com/evenchange4/gh-polls-bot/pull/6) fix(listener): return if there is no arguments (#6) (@evenchange4)
 - [#4](https://github.com/evenchange4/gh-polls-bot/pull/4) docs: typo in Readme (#4) (@mohnish)

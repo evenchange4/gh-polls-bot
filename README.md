@@ -47,7 +47,7 @@
 ### Requirements
 
 -   node >= 9.0.0
--   yarn >= 1.2.1
+-   yarn >= 1.3.2
 
 ```
 $ git clone https://github.com/evenchange4/gh-polls-bot
@@ -112,9 +112,6 @@ MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 [travis]: https://travis-ci.org/evenchange4/gh-polls-bot
 [codecov-badge]: https://img.shields.io/codecov/c/github/evenchange4/gh-polls-bot.svg?style=flat-square
 [codecov]: https://codecov.io/github/evenchange4/gh-polls-bot?branch=master
-[npm-badge]: https://img.shields.io/npm/v/gh-polls-bot.svg?style=flat-square
-[npm]: https://www.npmjs.com/package/gh-polls-bot
-[npm-downloads]: https://img.shields.io/npm/dt/gh-polls-bot.svg?style=flat-square
 [dependency-badge]: https://david-dm.org/evenchange4/gh-polls-bot.svg?style=flat-square
 [dependency]: https://david-dm.org/evenchange4/gh-polls-bot
 [devDependency-badge]: https://david-dm.org/evenchange4/gh-polls-bot/dev-status.svg?style=flat-square
@@ -125,10 +122,5 @@ MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 [license]: http://michaelhsu.mit-license.org/
 [greenkeeper-badge]: https://badges.greenkeeper.io/evenchange4/gh-polls-bot.svg
 [greenkeeper]: https://greenkeeper.io/
-[dockerhub-auto-badge]: https://img.shields.io/docker/automated/evenchange4/gh-polls-bot.svg?style=flat-square
-[dockerhub]: https://hub.docker.com/r/evenchange4/gh-polls-bot/
-[dockerPulls-badge]: https://img.shields.io/docker/pulls/evenchange4/gh-polls-bot.svg?style=flat-square
-[dockerSize]: https://microbadger.com/images/evenchange4/gh-polls-bot
-[dockerSize-badge]: https://images.microbadger.com/badges/image/evenchange4/gh-polls-bot.svg
 [prettier-badge]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square
 [prettier]: https://github.com/prettier/prettier
