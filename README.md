@@ -24,7 +24,7 @@ https://github.com/apps/polls
 ## Usage
 
 ```md
-/polls Option1 'Opntio 2' "Option 3"
+/polls Option1 'Option 2' "Option 3"
 
 # Automatically replace with the following markdown =>
 [![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXY635WEJEYKJV0BZ9WFPJVS/Option1)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/01BXY635WEJEYKJV0BZ9WFPJVS/Option1/vote)
