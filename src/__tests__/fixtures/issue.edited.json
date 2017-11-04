@@ -1,0 +1,28 @@
+{
+  "event": "issues",
+  "payload": {
+    "action": "edited",
+    "issue": {
+      "number": 1234,
+      "labels": [
+        {
+          "id": 737406747,
+          "url": "url",
+          "name": "Polls",
+          "color": "ededed",
+          "default": false
+        }
+      ],
+      "body": "/polls Option4 'Option 5' \"Option 6\""
+    },
+    "repository": {
+      "name": "test",
+      "owner": {
+        "login": "evenchange4"
+      }
+    },
+    "installation": {
+      "id": 1234
+    }
+  }
+}

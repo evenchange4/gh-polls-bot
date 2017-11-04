@@ -15,6 +15,7 @@ it('should handle addPollListener', async () => {
   const mockContext = {
     payload: {
       issue: {
+        number: 1234,
         body: 'H1H3\n/polls 1 2 3',
         labels: [],
       },
@@ -36,7 +37,7 @@ it('should handle addPollListener', async () => {
   });
 });
 
-it('should not addLabels if there is one', async () => {
+it('should not perform addLabels action when there is one', async () => {
   const mockGitHubAPI = {
     issues: {
       addLabels: jest.fn(),
@@ -46,8 +47,9 @@ it('should not addLabels if there is one', async () => {
   const mockContext = {
     payload: {
       issue: {
+        number: 1234,
         body: 'H1H3\n/polls 1 2 3',
-        labels: ['Polls'],
+        labels: [{ name: 'Polls' }],
       },
     },
     github: mockGitHubAPI,
@@ -64,7 +66,7 @@ it('should not addLabels if there is one', async () => {
   });
 });
 
-it('should handle commands without any arguments', async () => {
+it('should not performs actions with empty arguments', async () => {
   const mockGitHubAPI = {
     issues: {
       addLabels: jest.fn(),
@@ -74,8 +76,9 @@ it('should handle commands without any arguments', async () => {
   const mockContext = {
     payload: {
       issue: {
+        number: 1234,
         body: 'H1H3\n/polls',
-        labels: ['Polls'],
+        labels: [{ name: 'Polls' }],
       },
     },
     github: mockGitHubAPI,
