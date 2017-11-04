@@ -16,7 +16,7 @@ before_install:
 script:
   - yarn run eslint
   - yarn run test
-  - yarn run flow
+  - yarn run flow-coverage
 
 after_success:
   - ./node_modules/.bin/codecov

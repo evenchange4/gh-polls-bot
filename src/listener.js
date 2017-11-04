@@ -1,5 +1,6 @@
 // @flow
 const split /* : string => string[] */ = require('argv-split');
+const R = require('ramda');
 const getCommand = require('./utils/getCommand');
 const { addPoll } = require('./utils/API');
 const toMarkdown = require('./utils/toMarkdown');
@@ -18,7 +19,7 @@ const addPollListener /* : Listener */ = async context => {
     const id = await addPoll(options);
 
     // 2. Add Label
-    if (!labels.includes(LABEL)) {
+    if (!R.any(R.propEq('name', LABEL))(labels)) {
       await context.github.issues.addLabels(context.issue({ labels: [LABEL] }));
     }
 

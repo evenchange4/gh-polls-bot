@@ -1,0 +1,20 @@
+{
+  "event": "issues",
+  "payload": {
+    "action": "opened",
+    "issue": {
+      "number": 1234,
+      "labels": [],
+      "body": "/polls Option1 'Option 2' \"Option 3\""
+    },
+    "repository": {
+      "name": "test",
+      "owner": {
+        "login": "evenchange4"
+      }
+    },
+    "installation": {
+      "id": 1234
+    }
+  }
+}
