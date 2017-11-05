@@ -31,9 +31,9 @@ it('should handle addPollListener', async () => {
 
   expect(mockGitHubAPI.issues.edit).toHaveBeenCalledWith({
     body: `H1H3
-[![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/ID/1)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/ID/1/vote)
-[![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/ID/2)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/ID/2/vote)
-[![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/ID/3)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/ID/3/vote)`,
+[![](https://api.gh-polls.com/poll/ID/1)](https://api.gh-polls.com/poll/ID/1/vote)
+[![](https://api.gh-polls.com/poll/ID/2)](https://api.gh-polls.com/poll/ID/2/vote)
+[![](https://api.gh-polls.com/poll/ID/3)](https://api.gh-polls.com/poll/ID/3/vote)`,
   });
 });
 
@@ -60,9 +60,9 @@ it('should not perform addLabels action when there is one', async () => {
   expect(mockGitHubAPI.issues.addLabels).not.toHaveBeenCalled();
   expect(mockGitHubAPI.issues.edit).toHaveBeenCalledWith({
     body: `H1H3
-[![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/ID/1)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/ID/1/vote)
-[![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/ID/2)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/ID/2/vote)
-[![](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/ID/3)](https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod/poll/ID/3/vote)`,
+[![](https://api.gh-polls.com/poll/ID/1)](https://api.gh-polls.com/poll/ID/1/vote)
+[![](https://api.gh-polls.com/poll/ID/2)](https://api.gh-polls.com/poll/ID/2/vote)
+[![](https://api.gh-polls.com/poll/ID/3)](https://api.gh-polls.com/poll/ID/3/vote)`,
   });
 });
 
