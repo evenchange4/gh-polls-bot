@@ -2,7 +2,7 @@
 
 exports[`should return config 1`] = `
 Object {
-  "BASE_URL": "https://m131jyck4m.execute-api.us-west-2.amazonaws.com/prod",
+  "BASE_URL": "https://api.gh-polls.com",
   "LABEL": "Polls",
 }
 `;
