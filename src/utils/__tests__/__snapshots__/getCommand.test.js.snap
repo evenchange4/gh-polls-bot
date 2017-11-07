@@ -14,6 +14,8 @@ Array [
 ]
 `;
 
+exports[`should return empty array without any argument matched issue#13 1`] = `Array []`;
+
 exports[`should return only one command 1`] = `
 Array [
   "/polls 4 5 6",
