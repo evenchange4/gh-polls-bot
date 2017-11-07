@@ -10,12 +10,11 @@ const addPollListener /* : Listener */ = async context => {
   const { body, labels } = context.payload.issue;
   const [command, argument] /* : [string, string|void] */ = getCommand(body);
 
-  if (!argument) return;
-
-  const options = split(argument);
+  if (!command || !argument) return;
 
   try {
     // 1. Post API
+    const options = split(argument);
     const id = await addPoll(options);
 
     // 2. Add Label

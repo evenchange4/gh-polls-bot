@@ -2,8 +2,11 @@
 const R = require('ramda');
 
 /**
- * ref: https://github.com/probot/commands/blob/master/index.js#L8
+ * RegExp ref: https://regex101.com/r/0memMW/3
  */
-const getCommand /* : (string) => any */ = R.match(/^\/[\w]+\b *(.*)?$/m);
+const getCommand /* : (string) => any */ = R.pipe(
+  R.match(/^\/polls\b[ \t]+(.*)+$/m),
+  Array.from,
+);
 
 module.exports = getCommand;

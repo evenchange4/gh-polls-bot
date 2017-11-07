@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "Automatically create polls in GitHub issues.",
   "author": "Michael Hsu (徐承志) <evenchange4@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "repository": "https://github.com/evenchange4/gh-polls-bot.git",
   "scripts": {
     "start": "probot run ./src/index.js --port 3000",

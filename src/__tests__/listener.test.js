@@ -89,3 +89,32 @@ it('should not performs actions with empty arguments', async () => {
   expect(mockGitHubAPI.issues.addLabels).not.toHaveBeenCalled();
   expect(mockGitHubAPI.issues.edit).not.toHaveBeenCalled();
 });
+
+it('should not performs actions without command matched issue#13', async () => {
+  const mockGitHubAPI = {
+    issues: {
+      addLabels: jest.fn(),
+      edit: jest.fn(),
+    },
+  };
+  const mockContext = {
+    payload: {
+      issue: {
+        number: 1234,
+        body: `Errno::ENOENT: No such file or directory @ rb_sysopen -
+/home/travis/.rvm/rubies/ruby-2.4.0/lib/ruby/site_ruby/2.4.0/bundler/templates/Executable
+An error occurred while installing concurrent-ruby (1.0.5), and Bundler cannot
+continue.
+Make sure that gem install concurrent-ruby -v '1.0.5' succeeds before
+bundling.`,
+        labels: [],
+      },
+    },
+    github: mockGitHubAPI,
+    issue: data => data,
+  };
+  await addPollListener(mockContext);
+
+  expect(mockGitHubAPI.issues.addLabels).not.toHaveBeenCalled();
+  expect(mockGitHubAPI.issues.edit).not.toHaveBeenCalled();
+});
