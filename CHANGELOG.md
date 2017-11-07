@@ -1,6 +1,12 @@
 ## Change Log
 
+### v1.0.3 (2017/11/07 03:52 +00:00)
+- [#14](https://github.com/evenchange4/gh-polls-bot/pull/14) fix(getCommand): update regular expression to check command carefully (#14) (@evenchange4)
+- [#11](https://github.com/evenchange4/gh-polls-bot/pull/11) fix: BASE_URL to point to official api (#11) (@tj)
+- [84e0990](https://github.com/evenchange4/gh-polls-bot/commit/84e0990973eb8e48029076c491f909ef7fdf634c) docs(CHANGELOG): release (@evenchange4)
+
 ### v1.0.2 (2017/11/04 02:52 +00:00)
+- [fd3c19c](https://github.com/evenchange4/gh-polls-bot/commit/fd3c19c67f8d8cd8fbbe5b78bda0e18bf2d92422) 1.0.2 (@evenchange4)
 - [#10](https://github.com/evenchange4/gh-polls-bot/pull/10) fix(addLabel): update Label type & add some integration test (#10) (@evenchange4)
 - [#9](https://github.com/evenchange4/gh-polls-bot/pull/9) test(flow): add flow-coverage (#9) (@evenchange4)
 - [#8](https://github.com/evenchange4/gh-polls-bot/pull/8) chore(yarn): upgrade to 1.3.2 (#8) (@evenchange4)
