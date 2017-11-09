@@ -96,6 +96,7 @@ $ yarn run changelog
 - Links related to GH polls:
   - [Web App](https://app.gh-polls.com/) – GH polls web app
   - [apex/gh-polls](https://github.com/apex/gh-polls) – Polls for user feedback in GitHub issues [gh-polls.com](https://gh-polls.com/)
+  - [bukinoshita/gh-polls](https://github.com/bukinoshita/gh-polls) – node module to create gh-polls
 
 ## CONTRIBUTING
 
