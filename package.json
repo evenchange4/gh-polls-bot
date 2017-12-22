@@ -50,7 +50,7 @@
     "jest": "^21.2.1",
     "localtunnel": "^1.8.3",
     "nodemon": "^1.12.1",
-    "now": "^8.3.11",
+    "now": "^9.0.1",
     "prettier": "^1.7.4"
   },
   "engines": {
