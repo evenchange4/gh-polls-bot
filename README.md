@@ -1,3 +1,14 @@
+Should this repository be archived as it [hasn't worked for several months](https://github.com/evenchange4/gh-polls-bot/issues/26)?
+
+[![](https://api.gh-polls.com/poll/01FM67RZ088FX9RKCVSWQR5VG7/Yes)](https://api.gh-polls.com/poll/01FM67RZ088FX9RKCVSWQR5VG7/Yes/vote)
+[![](https://api.gh-polls.com/poll/01FM67RZ088FX9RKCVSWQR5VG7/No)](https://api.gh-polls.com/poll/01FM67RZ088FX9RKCVSWQR5VG7/No/vote)
+
+<hr/>
+
+# Obsolete content
+
+<hr/>
+
 <p align="center" >
   <a href="https://github.com/apps/polls">
     <img height="65" src="./docs/logo.png">
